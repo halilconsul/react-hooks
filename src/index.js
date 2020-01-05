@@ -5,6 +5,7 @@ import TopBar from "components/topBar";
 import Routes from "pages/routes";
 import { CurrentUserProvider } from "contexts/currentUser";
 import CurrentUserChecker from "components/CurrentUserChecker";
+import './App.css';
 
 const App = () => {
   return (
