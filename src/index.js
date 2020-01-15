@@ -9,14 +9,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <CurrentUserProvider>
-      <CurrentUserChecker>
-        <Router>
-          <TopBar />
-          <Routes />
-        </Router>
-      </CurrentUserChecker>
-    </CurrentUserProvider>
+      <div>Apspsp</div>
   );
 };
 
