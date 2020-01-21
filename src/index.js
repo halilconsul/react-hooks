@@ -1,10 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import { CurrentUserProvider } from "contexts/currentUser";
+import TopBar from "components/TopBar";
+import CurrentUserChecker from "components/CurrentUserChecker";
+import Routes from "pages/routes";
+import "./App.css";
 
 const App = () => {
   return (
-      <div>Apspsp</div>
+    <CurrentUserProvider>
+      <CurrentUserChecker>
+        <Router>
+          <TopBar />
+          <Routes />
+        </Router>
+      </CurrentUserChecker>
+    </CurrentUserProvider>
   );
 };
 
